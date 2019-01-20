@@ -1,17 +1,23 @@
+* {
+    font-size: 17px;
+}
+
 body {
-	font-family: 'Comfortaa';
+    font-family: 'Comfortaa';
     margin: 0px;
     padding: 0px;
+    background-color: #595959;
+    color: white;
 }
 
 .NavBar {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
-    font-size: 16px;
-    font-weight: 500;
+    background-color: #4d4d4d;
     margin: 0;
     padding: 0;
+    border-color: white;
+    border-bottom-style: solid;
 }
 
 .NavBar > li {
@@ -27,54 +33,55 @@ body {
 }
 
 .NavBar > li > a:hover, .dropdown:hover {
-    background-color: grey;
+    background-color: #737373;
     color: white;
 }
 
 .dropdown {
     float: left;
     overflow: hidden;
-    background-color: #333;
+    background-color: #4d4d4d;
 }
 
 .dropdownContent {
     position: absolute;
     display: none;
-    background-color: #333;
-    height: 90px;
+    background-color: #4d4d4d;
+    height: auto;
     width: 170px;
 }
 
 .dropdownContent a{
-    color: lightgrey;
+    color: #737373;
     text-decoration: none;
     display: block;
     font-size: 16px;
     font-weight: 500;
-    margin: 0;
-    padding: 5px;
-}
-
-.dropdownContent a:hover {
-    background-color: grey;
+    margin: auto;
+    padding: 10px;
     color: white;
 }
 
-.dropdown:hover .dropdownContent{
+/* School dropdown */
+.dropdownContent a:hover {
+    background-color: #737373;
+}
+
+.dropdown:hover .dropdownContent {
     display: block;
 }
 
-.dropdown:hover > a, ul > li > a:hover{
-    color: white;
+.dropdown:hover > a, ul > li > a:hover {
+    cursor: pointer;
 }
 
-
-.active {
-    background-color: #4CAF50;
+.dropdown-menu {
+    text-decoration: none; 
+    display: block;
 }
-
 .title {
     text-align: center;
+    font-size: 30px;
 }
 
 .text {
@@ -92,21 +99,22 @@ body {
 }
 
 .fab {
-    color: black;
+    color: #999999;
     margin-left: 10px;
 }
 
 .fas {
-    color: black;
+    color: #999999;
     margin-left: 10px;
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  color: white;
 }
 
 .far {
     color: white;
 }
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
